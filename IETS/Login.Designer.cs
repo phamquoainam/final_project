@@ -1,7 +1,7 @@
 ﻿namespace IETS
 {
     //Huy Hoang cuc cho
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
