@@ -30,15 +30,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.login_showpass = new System.Windows.Forms.CheckBox();
-            this.login_button = new System.Windows.Forms.Button();
             this.login_password = new System.Windows.Forms.TextBox();
             this.login_username = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.close = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +47,6 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.login_showpass);
-            this.panel1.Controls.Add(this.login_button);
             this.panel1.Controls.Add(this.login_password);
             this.panel1.Controls.Add(this.login_username);
             this.panel1.Controls.Add(this.label3);
@@ -58,6 +56,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(316, 295);
             this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.ForeColor = System.Drawing.Color.Gold;
+            this.button1.Location = new System.Drawing.Point(85, 266);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 26);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "REGISTER";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // login_showpass
             // 
@@ -71,16 +81,6 @@
             this.login_showpass.TabIndex = 6;
             this.login_showpass.Text = "Show Password";
             this.login_showpass.UseVisualStyleBackColor = false;
-            // 
-            // login_button
-            // 
-            this.login_button.BackColor = System.Drawing.Color.Gold;
-            this.login_button.Location = new System.Drawing.Point(109, 234);
-            this.login_button.Name = "login_button";
-            this.login_button.Size = new System.Drawing.Size(85, 26);
-            this.login_button.TabIndex = 5;
-            this.login_button.Text = "Login";
-            this.login_button.UseVisualStyleBackColor = false;
             // 
             // login_password
             // 
@@ -124,11 +124,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font(".VnBlackH", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Lime;
             this.label1.Location = new System.Drawing.Point(87, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 44);
+            this.label1.Size = new System.Drawing.Size(123, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "SIGN IN";
             // 
@@ -145,18 +145,6 @@
             this.close.TabIndex = 1;
             this.close.Text = "x";
             this.close.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.ForeColor = System.Drawing.Color.Gold;
-            this.button1.Location = new System.Drawing.Point(85, 266);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 26);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "REGISTER";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -183,7 +171,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button login_button;
         private System.Windows.Forms.TextBox login_password;
         private System.Windows.Forms.TextBox login_username;
         private System.Windows.Forms.Label label3;
