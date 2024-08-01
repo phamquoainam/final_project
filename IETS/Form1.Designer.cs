@@ -1,5 +1,6 @@
 ﻿namespace IETS
 {
+    //Huy Hoang cuc cho
     partial class Form1
     {
         /// <summary>
