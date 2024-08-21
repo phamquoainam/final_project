@@ -1,0 +1,6 @@
+﻿CREATE TABLE months(
+     id INT PRIMARY KEY IDENTITY(1,1),
+     target VARCHAR(MAX) NULL
+)
+
+SELECT * FROM months
