@@ -1,6 +1,6 @@
 ﻿namespace IETS
 {
-    partial class Category
+    partial class Categoryy
     {
         /// <summary>
         /// Required designer variable.
@@ -226,7 +226,7 @@
             this.ClientSize = new System.Drawing.Size(856, 557);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            //this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Category";
             this.Text = "Category";
             this.Load += new System.EventHandler(this.Category_Load);

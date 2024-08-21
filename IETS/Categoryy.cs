@@ -13,16 +13,16 @@ using System.Security.Cryptography;
 
 namespace IETS
 {
-    public partial class Category : Form
+    public partial class Categoryy : UserControl
     {
         string stringConnection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\OOP\IETS\expenses.mdf;Integrated Security=True;Connect Timeout=30";
         //SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\OOP\IETS\expenses.mdf;Integrated Security=True;Connect Timeout=ense.mdf;Integrated Security=30");
-        public Category()
+        public Categoryy()
         {
             InitializeComponent();
             displayCategoryList();
         }
-        
+
         public void displayCategoryList()
         {
             CategoryData cData = new CategoryData();
@@ -40,12 +40,12 @@ namespace IETS
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void category_addBtn_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -56,12 +56,12 @@ namespace IETS
         private int getID = 0;
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
         }
 
         private void Category_Load(object sender, EventArgs e)
         {
-                
+
         }
 
         private void category_updateBtn_Click(object sender, EventArgs e)
@@ -73,7 +73,7 @@ namespace IETS
             else
             {
                 if (MessageBox.Show("Are you sure want to Update ID: " + getID + "?", "Confirmation Message"
-                   , MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+                   , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
                     using (SqlConnection connect = new SqlConnection(stringConnection))
@@ -110,7 +110,7 @@ namespace IETS
 
         private void category_clearBtn_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Category_Load_1(object sender, EventArgs e)
@@ -140,7 +140,7 @@ namespace IETS
 
                         DateTime today = DateTime.Today;
                         cmd.Parameters.AddWithValue("@date", today);
-                        
+
                         cmd.ExecuteNonQuery();
                         clearFields();
 

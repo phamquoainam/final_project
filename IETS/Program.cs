@@ -16,7 +16,10 @@ namespace IETS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Func2());
+            //Application.Run(new Expenses());
+            //Application.Run(new Income());
+            //Application.Run(new Category());
         }
     }
 }
